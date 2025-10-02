@@ -18,7 +18,46 @@ class Pen{
 
 }
 
+class Student{
+    String name;
+    int age;
+
+    public void printInfo(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+
+    /* 
+    // non-parameterized constructor
+    Student(){
+        System.out.println("Constructor called...");
+    }
+    */
+
+    /*
+    // parameterized constructor
+    Student(String name, int age){
+        this.name=name;
+        this.age=age;
+
+    }
+
+    */
+
+
+    // copy constructor
+
+    Student (){
+    }
+    Student(Student s2){
+        this.name=s2.name;
+        this.age=s2.age;
+    }
+}
+
 public class OOPS{
+
+    /*
     public static void main(String args[]){
         Pen pen1 = new Pen();
         pen1.color="blue";
@@ -33,4 +72,29 @@ public class OOPS{
         pen2.write();
         pen2.printColor();
     }
+
+     */
+
+    public static void main(String args[]){
+
+        // new keyword by writting it generate a mempory in heap for that s1 object
+        
+       /*  
+    //  Student s1=new Student(); //non-parameterized constructor
+        s1.name="Sujal";
+        s1.age=20;
+       */
+
+        /*
+        Student s1=new Student("Sujal", 20);  //parameterized constructor
+        */
+
+        
+        Student s1=new Student();
+        s1.name="Sujal";
+        s1.age=20;
+        Student s2=new Student(s1); // copy constructor
+        s2.printInfo();
+    }
+
 }
