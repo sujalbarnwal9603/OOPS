@@ -1,3 +1,6 @@
+import java.util.*;
+
+
 class Shape {
     public void area(){
         System.out.println("Displays area");
@@ -17,7 +20,7 @@ class Circle extends Shape{
 }
 
 public class Inheritance {
-    public static void main(String args[]) {   // ✅ fixed "mian" → "main"
+    public static void main(String args[]) {   // ✅ fixed 
        
     }
 }
