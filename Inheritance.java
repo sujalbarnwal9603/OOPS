@@ -1,4 +1,5 @@
 import java.util.*;
+import bank;
 
 
 class Shape {
@@ -21,6 +22,7 @@ class Circle extends Shape{
 
 public class Inheritance {
     public static void main(String args[]) {   // ✅ fixed 
-       
+       bank.Account account1 = new bank.Account();
+       account1.name = "Corelshark";
     }
 }
